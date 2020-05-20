@@ -25,7 +25,7 @@ import io.swagger.annotations.ApiModelProperty;
 public abstract class VersionedComponent {
 
     private String identifier;
-    private String groupId;
+    private String groupIdentifier;
     private String name;
     private String comments;
     private Position position;
@@ -41,11 +41,11 @@ public abstract class VersionedComponent {
 
     @ApiModelProperty("The ID of the Process Group that this component belongs to")
     public String getGroupIdentifier() {
-        return groupId;
+        return groupIdentifier;
     }
 
-    public void setGroupIdentifier(String groupId) {
-        this.groupId = groupId;
+    public void setGroupIdentifier(String groupIdentifier) {
+        this.groupIdentifier = groupIdentifier;
     }
 
     @ApiModelProperty("The component's name")
